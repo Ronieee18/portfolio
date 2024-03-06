@@ -1,0 +1,33 @@
+li{
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+li:hover,.about-link:hover{
+    color: blue;
+    text-decoration: underline blue 2px ;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 7px;
+}
+.header-container{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white; 
+}
+.navbar{
+    background-color: white; /* Ensure the navbar has a white background */
+    z-index: 1000;
+}
+.menu-list {
+    position: absolute;
+    top: 100%; /* Position the menu below the navbar */
+    right: 10px; /* Adjust as needed */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white; /* Set the background color of the menu */
+    z-index: 1001; /* Ensure the menu is on top of the navbar */
+  }

@@ -1,0 +1,60 @@
+.about-card {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+    
+  }
+  
+  .about-card.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .card1.active{
+    animation-name: trans;
+    animation-duration: 2s;
+
+  }
+ @keyframes trans{
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+    
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+ }
+
+
+ .card2.active{
+  animation-name: trans1;
+  animation-duration: 2s;
+
+}
+@keyframes trans1{
+from{
+  transform: translateX(100%);
+  opacity: 0;
+  
+}
+to{
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+.card3.active{
+  animation-name: mytube ;
+  animation-duration: 2s;
+}
+@keyframes mytube{
+  from{
+    transform: scaleX(1.5);
+    opacity: 0;
+    
+  }
+  to{
+    opacity: 1;
+  }
+}
