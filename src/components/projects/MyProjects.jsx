@@ -28,7 +28,7 @@ export default function MyProjects() {
         <h1  className='text-3xl font-semibold'>Projects</h1>
         <p className='text-lg italic mt-3'>"Projects are the fuel that ignites the engine of progress."</p>
         <div className='flex flex-wrap gap-x-28 justify-center'>
-        <div className={`shadow-2xl shadow-gray-800 relative card1 max-[660px]:mb-48 mt-10 ${isVisible ? 'active' : ''} `} ref={cardRef}>
+        {/* <div className={`shadow-2xl shadow-gray-800 relative card1 max-[660px]:mb-48 mt-10 ${isVisible ? 'active' : ''} `} ref={cardRef}>
                 <img src={blog} alt="" height={250} width={250} />
                 <div className='absolute rounded-xl  w-[250px] top-28 bg-white '>
                     <h1 className='font-serif text-lg p-2 tracking-wider	'>A Blog app</h1>
@@ -49,7 +49,7 @@ export default function MyProjects() {
                    
 
                 </div>
-        </div>
+        </div> */}
 
 
         <div className={`shadow-2xl shadow-gray-800  relative card2 mt-10 ${isVisible ? 'active' : ''}`}>
