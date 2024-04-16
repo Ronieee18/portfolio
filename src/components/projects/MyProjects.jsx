@@ -55,7 +55,7 @@ export default function MyProjects() {
         <div className={`shadow-2xl shadow-gray-800  relative card2 mt-10 ${isVisible ? 'active' : ''}`}>
                 <img src={allinone} alt="" height={250} width={250} />
                 <div className='absolute rounded-xl  w-[250px] top-28 bg-white '>
-                    <h1 className='font-serif text-lg p-2 tracking-wider	'>A Blog app</h1>
+                    <h1 className='font-serif text-lg p-2 tracking-wider	'>Basic Utilities App</h1>
                     <hr className='h-[3px] bg-gray-400' />
                     <p className='text text-center'>
                     Harnessing the power of HTML, CSS, JavaScript, React, Redux, and Appwrite backend services, this application offers essential utilities such as password generation, currency conversion etc. 
