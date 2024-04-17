@@ -52,7 +52,7 @@ export default function MyProjects() {
         </div> */}
 
 
-        <div className={`shadow-2xl shadow-gray-800  relative card2 mt-10 ${isVisible ? 'active' : ''}`}>
+        <div className={`shadow-2xl shadow-gray-800  relative card2 mt-10 ${isVisible ? 'active' : ''}` }>
                 <img src={allinone} alt="" height={250} width={250} />
                 <div className='absolute rounded-xl  w-[250px] top-28 bg-white '>
                     <h1 className='font-serif text-lg p-2 tracking-wider	'>Basic Utilities App</h1>
@@ -85,6 +85,31 @@ export default function MyProjects() {
                     <div className='flex gap-x-5 mt-3 justify-center'>
                          <a href="https://github.com/Ronieee18/fullstack02-backend" target='_blank'>                  
                     <button class="flex hover:underline  items-center border border-yellow-500 py-1 px-3 ">
+                        <img src="https://cdn-icons-png.flaticon.com/128/25/25657.png" class="mr-2 h-5 w-5" alt=""/>
+                        <span>See Code</span>
+                    </button></a>
+                    </div>
+
+                </div>
+        </div>
+
+
+        {/* edutech */}
+        <div className={`  flex flex-wrap gap-x-10  justify-center relative  card3 mt-[100px] ${isVisible ? 'active' : ''}`}>
+                <img src='edutech.png' alt="" height={200} width={400} className='border border-gray-500 max-[690px]:w-[300px]'/>
+                <div className=' rounded-xl  w-[250px] top-28 bg-white '>
+                    <h1 className='font-serif text-lg p-2 tracking-wide'>Edutech</h1>
+                    <hr className='h-[3px] bg-gray-400' />
+                    <p className='text text-center'>
+
+                    "This project, built on the MERN stack, provides a user to a explore & learn wide range of courses across various categories. Additionally, it empowers users to become instructors, fostering a collaborative and diverse learning community."                     </p>
+                    <div className='flex gap-x-5 mt-3 justify-center'>
+                    <a href="https://edutechlearning.netlify.app/" target='_blank'>
+                    <button className="flex hover:underline  items-center bg-yellow-500 hover:bg-yellow-700 text-black py-1 px-3 rounded">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8944/8944297.png" class="mr-2 h-4 w-4" alt=""/>
+                            Try Live </button></a>  
+                            <a href="https://github.com/Ronieee18?tab=repositories" target='_blank'>                  
+                    <button className="flex hover:underline  items-center border border-yellow-500 py-1 px-3 ">
                         <img src="https://cdn-icons-png.flaticon.com/128/25/25657.png" class="mr-2 h-5 w-5" alt=""/>
                         <span>See Code</span>
                     </button></a>
