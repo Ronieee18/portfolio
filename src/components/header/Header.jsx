@@ -18,6 +18,7 @@ function Header({ scrollToAbout }) {
         if (projectsSection) {
           projectsSection.scrollIntoView({ behavior: 'smooth' });
         }
+        setShowMenu(false);
       };
       const scrollToSkills = () => {
         // Scroll to the Skills section
@@ -25,6 +26,7 @@ function Header({ scrollToAbout }) {
         if (skillSection) {
           skillSection.scrollIntoView({ behavior: 'smooth' });
         }
+        setShowMenu(false);
       };
 
       const scrollToTop = () => {
@@ -33,6 +35,7 @@ function Header({ scrollToAbout }) {
         if (home) {
           home.scrollIntoView({ behavior: 'smooth' });
         }
+        setShowMenu(false);
       };
       
       const scrollToContact=()=>{
@@ -40,6 +43,7 @@ function Header({ scrollToAbout }) {
         if(contact){
           contact.scrollIntoView({behavior:"smooth"})
         }
+        setShowMenu(false);
       }
     
     
@@ -59,7 +63,7 @@ function Header({ scrollToAbout }) {
                   <li onClick={scrollToTop}>Home</li>
                 
                   <li>
-                  <button className="about-link " onClick={scrollToAbout}>About</button>
+                  <button className="about-link " onClick={()=>{scrollToAbout();setShowMenu(false)}}>About</button>
                   </li>
                   <li onClick={scrollToProjects}>
                   Projects
